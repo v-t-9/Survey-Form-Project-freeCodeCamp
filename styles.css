@@ -1,0 +1,83 @@
+:root{
+    --very-dark-violet:#33186B;
+    --dark-violet:#7360DF;
+    --violet:#C499F3;
+    --pink-violet:#F2AFEF;
+}
+
+main{
+    margin: 30px 30%;
+    display: inline-block;
+    color: var(--pink-violet);
+    font-size: 1.2em;
+    width: 25em;
+}  
+h1{
+    font-size: 42px;
+    font-family: "Manrope", sans-serif;
+}
+h1,p{
+    text-align: center;
+   
+}
+#section-text{
+    text-align: left;
+    margin: 0.1em 0 0.5em 0;
+}
+fieldset{
+    padding:20px 25px;
+    margin: 0.5em 0;
+    border: 3px solid var(--dark-violet);
+}
+
+#personal-data, #services{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+#number{
+    margin: 8px 0 0 0;
+}
+input, textarea, select{
+    background-color: var(--violet);
+    color: var(--very-dark-violet);
+    outline: var(--dark-violet) solid 1px;
+}
+#recommend, input[type="checkbox"]{
+    outline: none;
+}
+
+body{
+    background-color: var(--very-dark-violet);
+    accent-color:var(--violet);
+    font-family: "Work Sans", sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+#name, #email, #dropdown, #number{
+    height: 20px;
+   
+}
+#submit{
+    margin: 0.5em 0;
+    width:auto;
+    padding: 5px 1px;
+    align-self: stretch;
+    height: 35px;
+    background-color: var(--dark-violet);
+    color: var(--pink-violet);
+    font-weight: bold;
+    border: 2px solid var(--pink-violet);
+}
+#submit, fieldset, input, select, textarea{
+    border-radius: 10px;
+}
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.4;
+    color: var(--very-dark-violet);
+}
